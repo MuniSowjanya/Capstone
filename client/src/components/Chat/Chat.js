@@ -109,7 +109,7 @@ const Chat = () => {
       console.log("here");
       receivedMessage(message);
     })
-  }, []);
+  }, [yourID]);
 
   function receivedMessage(message) {
     setMessages(oldMsgs => [...oldMsgs, message]);

@@ -4,7 +4,7 @@ import Header from './Header';
 import Footer from './footer';
 import '../static/css/submit.css';
 import { category } from '../config/category';
-import { province, cities } from '../config/pakistan';
+import { province, cities } from '../config/india';
 import axios from 'axios';
 import NotificationSystem from 'react-notification-system';
 
@@ -189,14 +189,13 @@ class SubmitAdd extends React.Component {
                                             required nane="condition">
                                             <option value=''>Shared price</option>
                                             <option value='new'>With two persons</option>
-                                            <option value='used'>More than two persons</option>
-                                        </select>
+uct                                         </select>
                                     </div> : ''}
                                 <br />
                                 <label><b>Post Description</b><span style={{ color: 'red' }}>*</span></label>
                                 <textarea cols={60} rows={8}
 
-                                    className="form-control" name="description" placeholder="Including the brand, model, age, KM's and any other accessories" required>
+                                    className="form-control" name="description" placeholder="Sharing product description" required>
                                 </textarea> <br /> <br />
 
                                 <label><b>Upload Photos</b><span style={{ color: 'red' }}>*</span></label>

@@ -4,7 +4,7 @@ import '../static/css/app.css';
 import Header from './Header';
 import Footer from './footer';
 import { category } from '../config/category';
-import Slider from './Slider/slider'
+import Slider from './Slider/slide1'
 
 class Home extends React.Component {
     constructor(props) {

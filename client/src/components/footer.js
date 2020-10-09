@@ -15,9 +15,8 @@ class Footer extends React.Component {
                     <img src={logo} alt="Logo" id="flogo" height="60" width="60" />
                     <small>&copy; Copyright 2020, Soal</small>
                     <div style={{ float: "right" ,color:"white"}}>
-                        <a href="">Location Map</a> <br></br>
-                        <a href="">Popular</a> <br></br>
-                        <a href="">Term and use</a> <br></br>
+                        <a href="">Location Map</a> <br/>
+                        <a href="">Term and use</a> <br/>
                         <a href="">Help & Contact Us</a>
                         
                     </div>

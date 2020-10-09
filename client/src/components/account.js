@@ -36,7 +36,7 @@ class Account extends React.Component {
 
                         <div className="tab-pane fade" id="panel2" role="tabpanel">
                             <br />
-                            <Chat/>
+                            {/* <Chat/> */}
                         </div>
 
                         <div className="tab-pane fade" id="panel3" role="tabpanel">
