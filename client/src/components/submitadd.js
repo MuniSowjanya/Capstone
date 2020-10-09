@@ -3,7 +3,7 @@ import Header from './Header';
 import Footer from './footer';
 import '../static/css/submit.css';
 import { category } from '../config/category';
-import { province, cities } from '../config/pakistan';
+import { province, cities } from '../config/india';
 import axios from 'axios';
 import NotificationSystem from 'react-notification-system';
 
