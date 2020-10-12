@@ -66,7 +66,7 @@ const MyRow = styled.div`
 
 const MyMessage = styled.div`
   width: 45%;
-  background-color: pink;
+  background-color: white;
   color: #46516e;
   padding: 10px;
   margin-right: 5px;
@@ -82,7 +82,7 @@ const PartnerRow = styled(MyRow)`
 const PartnerMessage = styled.div`
   width: 45%;
   background-color: transparent;
-  color: lightgray;
+  color: white;
   border: 1px solid lightgray;
   padding: 10px;
   margin-left: 5px;
@@ -109,7 +109,7 @@ const Chat = () => {
       console.log("here");
       receivedMessage(message);
     })
-  }, [yourID]);
+  }, []);
 
   function receivedMessage(message) {
     setMessages(oldMsgs => [...oldMsgs, message]);

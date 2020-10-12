@@ -4,7 +4,7 @@ import '../static/css/app.css';
 import Header from './Header';
 import Footer from './footer';
 import { category } from '../config/category';
-import Slider from './Slider/slide1'
+import Slider from './Slider/slideshow'
 
 class Home extends React.Component {
     constructor(props) {
@@ -51,36 +51,14 @@ class Home extends React.Component {
                 <div id="container" className="container">
                     <Header />
                     <div id="content">
-                        <div id="form-bg">
-                            <div id="form-overlay">
+                        
 
-                                <div className="row">
-                                    <div className=" col-md-8 col-lg-8" id="iconform">
-                                        <input type="text" className="form-control" id="location"
-                                            onKeyPress={this._handleKeyPress}
-                                            placeholder="Type of search" />
-                                        <i className="fa fa-map-marker-alt"></i>
-                                    </div>
-                                    
+                                
+                           <Slider/>
 
-                                            
-                                            <div className="col-md-2  col-lg-2">
-                                                <button type="button" className="btn btn-outline-primary" id="search-btn">
-                                                    <i className="fa fa-search"></i>
-                                                    Search</button>
-                                            </div>
-                                        
-                                    
-
-                                </div>
-
-
-
-                            </div>
-
-                        </div>
                         <div id="main-content" className="row">
-                            <div id="catagory" className="col-md-6 col-sm-6 col-xs-6 col-lg-6">
+                            
+                          
                                 {
                                     this.state.category.map((item, i) => {
                                         return (
@@ -94,13 +72,13 @@ class Home extends React.Component {
                                 }
 
 
-                            </div>
+                        
 
                             <div id="follow" className="col-md-4 col-sm-4  col-xs-4 col-lg-4">
                             
                             {/* <img src={"https://fbcd.co/product-lg/ce716b231574f32f8bc09ed10aa3b04a_resize.JPG"}
                             height="300" id="follow-us"/> */}
-                                 <Slider/>
+                                 {/* <Slider/> */}
                                  
                                  
 

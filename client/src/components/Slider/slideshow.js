@@ -15,7 +15,7 @@ export class SlickDemo extends Component {
             { img: 'Images/slide7.jpeg' },
             { img: 'Images/slide8.jpeg' },
             { img: 'Images/slide9.jpeg' },    
-          ];  
+          ];   
     var imgSlides = () =>  
     images.map(num => (  
       <div className="imgpad">  
@@ -34,10 +34,9 @@ export class SlickDemo extends Component {
         slidesToScroll={1}  
         autoplay={true}  
         arrows={true}  
-        autoplaySpeed={3000}>{imgSlides()}</Slider>  
+        autoplaySpeed={2000}>{imgSlides()}</Slider>  
     </div>  
   );  
 }  
 }  
 export default SlickDemo;  
-

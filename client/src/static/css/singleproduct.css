@@ -56,6 +56,9 @@
 #tips ol li {
     font-size: 12px;
 }
+#myproduct-cate {
+    margin-top: 19px;
+    }
 
 @media only screen and (max-width: 640px) {
     img {

@@ -3,6 +3,8 @@ import Header from './Header';
 import Footer from './footer';
 import '../static/css/singleproduct.css';
 import axios from 'axios';
+import { Redirect } from 'react-router-dom'
+import { NavLink} from 'react-router-dom'
 
 var time = new Date();
 console.log(time);
@@ -28,6 +30,10 @@ class SingleProduct extends React.Component {
                 this.setState({ data: res.data });
                 console.log(this.state.data);
             }).catch(err => console.error(err))
+    }
+    handlesubmit=()=>{
+        //alert('Congratulations!You shown intrested on this post.You can contact by given phone number')
+        return <Redirect to="/myaccount"/>
     }
     render() {
         const { data } = this.state;
@@ -71,7 +77,7 @@ class SingleProduct extends React.Component {
                             <hr />
                             <b><p>Description:</p></b>
                             <p>{data !== undefined ? data[0].description : ''}</p>
-                            <p style={{ color: 'gray', fontSize: '14px', fontFamily: 'calibri' }}>Please contact shared product person</p>
+                            <p style={{ color: 'black', fontSize: '14px', fontFamily: 'calibri' }}>Please contact shared product person</p>
                             
 
                         </div>
@@ -85,12 +91,14 @@ class SingleProduct extends React.Component {
                             <div id="seller">
                                 <p style={{ fontWeight: 'bold', lineHeight: '0px' }}><i className="fas fa-user-tie" style={{ color: '#777', fontSize: '30px' }}></i> &nbsp;&nbsp;{data !== undefined ? data[0].name : ''}</p>
                                 <p style={{ color: 'green', lineHeight: '0px', fontSize: '11px', paddingLeft: '40px' }}>Online</p>
-                                <p style={{ fontSize: '13px', paddingLeft: '40px', color: 'blue' }}>(Active on site since a year)</p>
+                                <p style={{ fontSize: '13px', paddingLeft: '40px', color: 'blue' }}>(Active on site since 1 week)</p>
                                 <p style={{ textAlign: 'center', fontSize: '18px' }}><i className="fas fa-phone"></i> {data !== undefined ? data[0].phone : ''}</p>
                             </div>
                             <div id="message">
-                                <button type="button" id="msg-btn" onClick={() => alert('Congratulations!You shown intrested on this post.You can contact by given phone number')}>Intrested</button>
-
+                                {/* <button type="button" id="msg-btn"
+                                 onClick={this.handlesubmit}>
+                                     Intrested</button> */}
+                                     <NavLink to='/Chat'><button type="button" className="btno" >intrested</button></NavLink>
                             </div>
                             <div id="tips">
                                 <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Safety Tips for Buyers</p>

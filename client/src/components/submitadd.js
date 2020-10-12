@@ -189,6 +189,7 @@ class SubmitAdd extends React.Component {
                                             required nane="condition">
                                             <option value=''>Shared price</option>
                                             <option value='new'>With two persons</option>
+                                            <option value='new'>Morethan two persons</option>
 uct                                         </select>
                                     </div> : ''}
                                 <br />
@@ -223,8 +224,8 @@ uct                                         </select>
                                 <label><b>Name</b><span style={{ color: 'red' }}>*</span></label>
                                 <input type="text" id="name"
 
-                                    name="name" className="form-control" required /><br />
-                                <label><b>Phone number</b><span style={{ color: 'red' }}>*</span></label>
+                                    name="name" className="form-control" /><br />
+                                <label><b>Phone number</b><span style={{ color: 'red' }}></span></label>
                                 <input type="text" id="phone"
 
 

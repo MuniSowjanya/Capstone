@@ -6,9 +6,11 @@
 }
 
 #login {
-    border: 1px solid lightgray;
+    border: 1px solid black;
     box-shadow: 0px 0px 1px gray;
     padding: 20px;
+   
+height: 254px;
 }
 #email, #password{
     padding-left: 40px;
@@ -26,15 +28,22 @@
     color: lightgray;
 }
 .acfl {
-    float: left;
     font-size: 11px;
-    margin-top: 3px;
+margin-top: 3px;
+font-size: 15px;
+margin-top: 15px;
+color: black;
 }
 
 .acfr {
-    float: right;
     font-size: 11px;
     margin-top: 3px;
+    font-size: 15px;
+    margin-top: 10px;
+    color: black;
 }
+.btn:not(:disabled):not(.disabled) {
+    border: 1px solid aliceblue;
+    }
 /* Registration CSS */
 

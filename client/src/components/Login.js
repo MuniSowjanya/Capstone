@@ -5,10 +5,7 @@ import { NavLink } from 'react-router-dom';
 import Footer from './footer';
 import axios from 'axios';
 import NotificationSystem from 'react-notification-system';
-import FacebookLogin from 'react-facebook-login';
-const responseFacebook = (response) => {
-    console.log(response);
-}
+
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -43,7 +40,7 @@ class Login extends React.Component {
             if (res.status === 200) {
                 console.log(res.data);
                 localStorage.setItem("UserObject", JSON.stringify(res.data));
-                window.location = '/myaccount';
+                window.location = '/';
 
             }
         })
@@ -95,13 +92,7 @@ class Login extends React.Component {
                                 <button type="submit" className="btn btn-outline-primary btn-block">Submit</button>
                                 <p className="acfl">Forgot Password?</p>
                                 <NavLink to='/user/register'><p className="acfr">New User? Register Here</p></NavLink>
-                                <FacebookLogin
-                                    appId="1088597931155576"
-                                    autoLoad={true}
-                                    fields="name,email,picture"
-                                    scope="public_profile,user_friends,user_actions.books"
-                                    callback={this.responseFacebook}
-                                />
+                               
                             </form>
 
                         </div>
