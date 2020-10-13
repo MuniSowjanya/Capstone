@@ -98,7 +98,7 @@ class SingleProduct extends React.Component {
                                 {/* <button type="button" id="msg-btn"
                                  onClick={this.handlesubmit}>
                                      Intrested</button> */}
-                                     <NavLink to='/Chat'><button type="button" className="btno" >intrested</button></NavLink>
+                                     <NavLink to='/Chat'><button type="button" className="btno"style={{marginLeft: "88px"}}   >intrested</button></NavLink>
                             </div>
                             <div id="tips">
                                 <p style={{ textAlign: 'center', fontWeight: 'bold' }}>Safety Tips for Buyers</p>

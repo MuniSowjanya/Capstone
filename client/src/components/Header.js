@@ -24,7 +24,7 @@ class Header extends React.Component {
                             <NavLink to='/'><img src={logo} alt="Logo" id="logo" /></NavLink>
                         </div>
                         <div id="slogon">
-                            <h4>Sharing Benefits</h4>
+                            <h4 style={{fontSize:"24px"}}>Sharing Benefits</h4>
                         </div>
                     </div>
                   
