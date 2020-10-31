@@ -1,4 +1,4 @@
-# OLX-App-On-React
+# Sharing with benefits
 - [React.js](https://reactjs.org/).
 - [Node (Express.js)](http://expressjs.com/).
 - [MongoDB](https://www.mongodb.com/).
@@ -6,7 +6,7 @@
 
 To get started with this app, follow the instructions below.
 
-- git clone https://github.com/chmbila202/OLX-App-On-React/tree/master
+- git clone https://github.com/MuniSowjanya/Capstone
 - open in Visual Studio Code
 - npm start
 - start MongoDB server by typing "mongod" on cmd
